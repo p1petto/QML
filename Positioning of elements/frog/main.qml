@@ -9,8 +9,9 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
-    Circle_Green{
-        id: 'head_of_frog'
+    Circle{
+        comColor: 'green'
+        id: head_of_frog
         width: 200
         height: 200
         anchors.centerIn: parent
@@ -21,28 +22,46 @@ Window {
         }
     }
 
-    Circle_Green{
-        id: 'left_eye'
+    Circle{
+        comColor: 'green'
+        id: left_eye
         width: 80
         height: 80
         anchors.left: head_of_frog.left
         anchors.verticalCenter: head_of_frog.top
 
-        White_Circle {
-            Pupil{
+        Circle {
+            comColor: 'white'
+            width: parent.width / 1.5
+            height: parent.width / 1.5
+            anchors.centerIn: parent
+            Circle{
+                comColor: 'black'
+                width: parent.width / 2
+                height: parent.width / 2
+                anchors.centerIn: parent
             }
         }
     }
 
-    Circle_Green{
-        id: 'right_eye'
+    Circle{
+        comColor: 'green'
+        id: right_eye
         width: 80
         height: 80
         anchors.right: head_of_frog.right
         anchors.verticalCenter: head_of_frog.top
 
-        White_Circle {
-            Pupil{
+        Circle {
+            comColor: 'white'
+            width: parent.width / 1.5
+            height: parent.width / 1.5
+            anchors.centerIn: parent
+            Circle{
+                comColor: 'black'
+                width: parent.width / 2
+                height: parent.width / 2
+                anchors.centerIn: parent
             }
         }
     }

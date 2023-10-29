@@ -1,9 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>Circle_Green.qml</file>
-        <file>White_Circle.qml</file>
-        <file>Pupil.qml</file>
         <file>Mouth.qml</file>
+        <file>Circle.qml</file>
     </qresource>
 </RCC>
