@@ -1,8 +1,9 @@
 import QtQuick 2.15
+import QtQuick.Layouts 1.3
 
 Item {
-    width: parent.width / 3.1
-    height: parent.height
+    Layout.fillWidth: true
+    Layout.fillHeight: parent
 
     Rectangle {
         width: parent.width
