@@ -59,7 +59,7 @@ Window {
                 id: body
                 color: 'gainsboro'
                 Layout.fillWidth: true
-                Layout.fillHeight: win.height - head.height * 2
+                Layout.fillHeight: true
                 //                    width: win.width
                 //                    height: win.height - head.height * 2
                 Layout.alignment: Qt.AlignLeft
